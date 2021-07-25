@@ -1,0 +1,51 @@
+
+<div class="card" >
+    <h1>EDICION DEL USUARIO {{id}}</h1>
+    <form [formGroup]="myForm" (ngSubmit)="saveData()" >
+        <div > 
+            <p>Nombre Completo</p>
+        <input formControlName="fLastName" type="text" placeholder="tu primer apellido (20 caracteres)" >
+        <input formControlName="sLastName" type="text" placeholder="tu segundo apellido (20 caracteres)">
+        <input formControlName="fName" type="text" placeholder="primer nombre (20 caracteres)">
+        <input formControlName="sLastName" type="text" placeholder="otros nombres (30 caracteres)"> <br><br>
+        <p>Pais</p>
+        <input formControlName="contry" type="radio" id="male" name="contry" value="US">
+        <label for="Estados Unidos">Estados Unidos</label><br>
+        <input formControlName="contry" type="radio" id="female" name="contry" value="CO">
+        <label for="Colombia">Colombia</label><br>
+        <p>Tipo Documento</p>
+        <select formControlName="tipoI" class="js-select2" name="tipo" id=tipo>
+            <option>CC</option>
+            <option>CE</option>
+            <option>P</option>
+            <option>PE</option>
+        </select>
+        <br><br>
+        <p>Numero Documento</p>
+        <input formControlName="numI" type="text" placeholder="numero de identificacion">
+
+        <p>fecha Ingreso</p>
+        <input formControlName="fechaIngreso" type="date" min="2018-1-1" max="2020-11-17">
+
+        <p>Area</p>
+        <input formControlName="area" type="text" placeholder="area (operaciones,administrativo,etc)">    
+        </div>
+        <div >
+            <button mat-raised-button type="submit" [disabled]="myForm.invalid" color="primary">Guardar</button>
+        </div>
+    </form>
+
+
+</div>
+
+
+
+    
+
+
+    
+
+
+
+
+

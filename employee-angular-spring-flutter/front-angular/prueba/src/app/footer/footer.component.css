@@ -1,0 +1,13 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+footer {
+    width: 100%;
+    margin-top: 2em;
+    padding: 2.5rem 0;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    border-top: .05rem solid white;
+}
